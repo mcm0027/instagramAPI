@@ -1,0 +1,10 @@
+.imgResults li {
+  list-style: none;
+}
+
+.itemImg {
+  width: 27%;
+  margin: 1em 2.5%;
+  display: inline-block;
+  float: left;
+}
