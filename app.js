@@ -1,6 +1,10 @@
-angular.module('myApp', [])
-.controller('MyController', function($scope, $http) {
+angular.module('myApp', ['ngAnimate'])
+.controller('MyController', function($scope, $http, $timeout) {
+  
+  
   $scope.searchInstagram = function(keyword) {
+    
+
     
     $scope.keyword = keyword;
     
@@ -18,7 +22,9 @@ angular.module('myApp', [])
     })
     .then(function(result) {
       $scope.results = result.data.data;
-      console.log(result.data.data);
+      if ($scope.results.length === 0) {
+        alert("There are no pictures with this tag! :(")
+      }
     },
     function(result) {
       alert('error');

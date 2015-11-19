@@ -7,4 +7,66 @@
   margin: 1em 2.5%;
   display: inline-block;
   float: left;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.splash {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.keyword-input {
+  border: 2px solid black;
+  padding: .3em;
+  margin-right: .5em;
+}
+
+#submit {
+  background-color: white;
+  border: 2px solid black;
+  padding: .3em .8em;
+}
+
+.results h2{
+  margin: 1.5em 0;
+  text-align: center;
+  font-size: 1.3em;
+  
+}
+
+
+.itemImg {
+  -webkit-transition: linear 0.8s;
+  -moz-transition: linear 0.8s;
+  -o-transition: linear 0.8s;
+  transition: linear 0.8s;
+}
+
+
+.itemImg:hover {
+   -webkit-transform: scale(1.1) translateY(-1em);
+  -moz-transform: scale(1.1) translateY(-1em);
+  -o-transform: scale(1.1) translateY(-1em);
+  transition: scale(1.1) translateY(-1em);
+}
+
+.animate-repeat.ng-enter-stagger {
+  transition-delay: 0.1s;
+}
+
+.animate-repeat.ng-enter {
+  opacity:0;
+  margin-left:-2em;
+  transition: all ease-in-out 3s;
+}
+
+
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  margin-left: 0;
 }
